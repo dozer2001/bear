@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#" class="logo header__logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav class="header__nav header__nav_offset">
+                <ul>
+
+                    <li>
+                        <a href="#" class="header__link">О компании</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">История</a>
+                                <a href="#" class="header__link">Карьера</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Продукция</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Пиво</a>
+                                <a href="#" class="header__link">Безалкогольные пиво</a>
+                                <a href="#" class="header__link">Сладкие напитки</a>
+                                <a href="#" class="header__link">Вода</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Производство</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Технология производства пива</a>
+                                <a href="#" class="header__link">Технология производства напитков</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+
+                </ul>
+
+                <!-- 
+        <a href="#" class="header__link">Продукция</a>
+        <a href="#" class="header__link">Производство</a>
+        <a href="#" class="header__link">Новости </a>
+        <a href="#" class="header__link">Контакты</a> -->
+            </nav>
+            <button class="header-hamburder header-hamburder-js header-hamburder_offset">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="window">
+                <button class="window-close"></button>
+                <div class="window__content">
+                    <div class="window__menu">
+                        <div class="row">
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        О компании
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Карьера</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Магазины</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Новости</a>
+                                        </div>
+                                        <div class="menu-item-list__item has-child">
+                                            <i class="has-child__arrow"></i>
+                                            <a href="#">Где купить?</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Экскурсии на завод</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size menu-item_offset_bottom">
+                                        Контакты
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Продукция
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Пиво</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Сладкие напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Вода</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Безалкогольные напитки</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Производство
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство пиво</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="mobile-header">
+        <div class="mobile-header__header">
+            <a href="#" class="mobile-logo">
+                <img class="mobile-logo__pic" src="images/logo-vectr.svg" alt="">
+            </a>
+
+            <button class="mobile-btn mobile-btn-js">
+                <span class="mobile-btn__line"></span>
+                <span class="mobile-btn__line"></span>
+            </button>
+        </div>
+        <div class="mobile-header__bottom">
+
+            <ul class="mobile-header__menu">
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Продукция</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Пиво</a>
+                        </li>
+                        <li>
+                            <a href="#">Сладкие напитки</a>
+                        </li>
+                        <li>
+                            <a href="#">Вода</a>
+                        </li>
+                        <li>
+                            <a href="#">Безалкогольные напитки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">О компании</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#">История</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Где купить?</a>
+                        </li>
+                        <li>
+                            <a href="#">Экскурсии на завод</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item mobile-header__project mobile-header__project_offset">
+                        <a href="#">Производство</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="tel:89181207828" class="mobile-header__phone">
+                +7 (918) 12-07-828
+            </a>
+
+        </div>
+    </div>
+
+    <section class="section section-bg" style="background-image: url('images/plant.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="section__content section__content_h-offset wrapper">
+            <div class="header__navbar">
+                <h1 class="header__title">
+                    Экскурсии на завод
+                </h1>
+                <div class="breadcrump">
+                    <a href="#">Главная страница</a>
+                    <span>Экскурсии на завод</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <section class="section__content section__content_t-offset wrapper">
+            <div class="row">
+                <div class="col col--xl-3">
+                    <div class="history-navbar" id="sticker">
+                        <div class="history-navabr__column project project__navbar project__navbar_width">
+                            <a href="#" class="history-navbar__list">Производство</a>
+                            <a href="#" class="history-navbar__list">Технология производства
+                                пива</a>
+                            <a href="#" class="history-navbar__list">Технология производства
+                                напитков</a>
+                            <a href="#" class="history-navbar__list active">Экскурсии на завод</a>
+                        </div>
+                    </div>
+                    <div class="select-widget">
+                        <select class="select-widget_js">
+                            <option>Производство</option>
+                            <option>Технология производства
+                                пива</option>
+                            <option>Технология производства напитков</option>
+                            <option>Экскурсии на завод</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col col--xl-9">
+                    <h2 class="title title_red title_line-red">
+                        мы всегда рады гостям
+                    </h2>
+                    <div class="subtitle subtitle_offset-top technology technology_offset-bottom subtitle-project subtitle-project_size">
+                        <p>
+                            Приходите посмотреть, как мы делаем натуральные напитки. мы расскажем вам о производстве нашего пива, об
+                            истории завода.
+                            вы также сможете продегустировать наши напитки в конце экскурсии.
+                        </p>
+                    </div>
+                    <div class="plant-box plant-box_offset plant-box_gray plant-box_offset-bottom">
+                        <div class="row">
+                            <div class="col col--lg-7">
+
+                                <div class="text-desc">
+                                    <p>
+                                        Тихорецкий пивоваренный завод работает каждый день, кроме воскресенья.
+                                    </p>
+                                </div>
+
+                                <div class="plant-box__time">
+                                    <span>С 8:00 до 17:00</span>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col col--lg-5">
+                                <div class="plant-box plant-box_list">
+                                    <div class="plant-box__number">
+                                        <span>бесплатно</span>
+                                    </div>
+                                    <div class="plant-box__text plant-box__text_gray">
+                                        <span>
+                                            Стоимость экскурсии
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="plant-box__btn">
+                                    <div class="plant-box__content">
+                                        <div class="plant-box__title">
+                                            <p>Записаться на экскурсию:</p>
+                                        </div>
+                                        <div class="plant-box__row">
+                                            <a href="tel:+79181207828" class="plant-box__phone">+7 918 12 07 828</a>
+                                            <span>- Центральный офис</span>
+                                        </div>
+                                        <div class="plant-box__row">
+                                            <a href="tel:+79181207323" class="plant-box__phone">+7 918 12 07 323</a>
+                                            <span>- Отдел продаж</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row career career_border career_offset-bottom">
+                        <div class="col col--lg-3">
+                            <div class="career-box">
+                                <div class="number numbers_red numbers_bold">01.</div>
+                                <div class="description description__career">
+                                    <p>
+                                        Расскажем, что к чему
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--lg-9">
+                            <div class="text-desc">
+                                <!-- Экскурсия займет от полутора до двух часов. В начале мы ознакомим вас с правилами посещения музея и
+                техникой
+                безопасности на производстве, а потом выдадим и попросим надеть халаты, бахилы и одноразовые шапочки,
+                поэтому не делайте
+                пышных причесок. -->
+                                Тихорецкий пивоваренный завод открыт для посещения и проводит бесплатные экскурсии для организованных
+                                групп. Мы с
+                                удовольствием знакомим наших гостей с процессом создания настоящего пива и рассказываем много
+                                интересного об истории и
+                                деятельности одного из ведущих производств Краснодарского края.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row career career_border career_offset-bottom">
+                        <div class="col col--lg-3">
+                            <div class="career-box">
+                                <div class="number numbers_red numbers_bold">02.</div>
+                                <div class="description description__career">
+                                    <p>
+                                        Покажем, как делаем пиво и сладкие напитки
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--lg-9">
+                            <div class="text-desc">
+                                Чтобы организовать групповое посещение завода, необходимо позвонить по одному из телефонов
+                                представленных ниже или
+                                оставить заявку на сайте.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row career career_border career_offset-bottom">
+            <div class="col col--lg-3">
+              <div class="career-box">
+                <div class="number numbers_red numbers_bold">03.</div>
+                <div class="description description__career">
+                  <p>
+                    Угостим свежими напитками
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col col--lg-9">
+              <div class="text-desc">
+                В конце устроим дегустацию напитков за барной стойкой. Угостим квасом, соками и лимонадом. Тем, кто
+                старше 18 лет,
+                предложим пиво и медовуху. Всё, что понравится (а еще сувениры), можно купить в фирменном магазине по
+                приятным ценам.
+              </div>
+            </div>
+          </div>
+
+          <div class="row career career_border career_offset-bottom">
+            <div class="col col--lg-3">
+              <div class="career-box">
+                <div class="number numbers_red numbers_bold">04.</div>
+                <div class="description description__career">
+                  <p>Будем ждать снова</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col--lg-9">
+              <div class="text-desc">
+                Мы регулярно проводим специальные мероприятия в рамках общегородских и всероссийских проектов, таких как
+                «День без
+                турникетов», «Открытые пивоварни», «Ночь в музее» и «Недели русского кваса». Чтобы узнать о ближайшем
+                особом событии,
+                следите за новостями на сайте и на наших страницах в соцсетях.
+              </div>
+            </div>
+          </div> -->
+
+                    <div class="tehnology-slider">
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/plant-s.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/plant-s.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/plant-s.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/plant-s.jpg" alt="career">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tehnology-slider tehnology-slider_numbers">
+                        <div>
+                            <div class="tehnology-slider_position">
+                                <a href="#" class="prev-slider">
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+                                </a>
+                                <span class="tehnology-slider_active">1</span>/ 4
+                                <a href="#" class="next-slider">
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="plant-get">
+                        <div class="subtitle plant-get plant-get_offset-bottom subtitle-project subtitle-project_size">
+                            <p>
+                                Как добраться?
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col col--lg-5">
+                                <div class="plant-get__box">
+                                    <div class="plant-get__img plant-get__img_border-bottom">
+                                        <svg class="svg svg_red">
+                                            <use xlink:href="images/car.svg#car">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <h2 class="plant-get__title">
+                                        Автобусы
+                                    </h2>
+                                    <div class="plant-get__subtitle">
+                                        <p>
+
+                                            В Краснодаре ходит 117 муниципальных маршрутов, из которых 70 – городские, 47 – пригородные
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="plant-get__box plant-get__box_offset-top">
+                                    <div class="plant-get__img plant-get__img_border-bottom">
+
+
+                                        <svg class="svg svg_red">
+                                            <use xlink:href="images/train02.svg#train02">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <h2 class="plant-get__title">
+                                        Трамваи
+                                    </h2>
+                                    <div class="plant-get__subtitle plant-get__subtitle_reset">
+                                        <p>
+                                            В Краснодаре – 29 маршрутов трамваев и 20 маршрутов троллейбусов. Стоимость проезда – 15 рублей.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-7">
+                                <div class="plant-get__box plant-get__box_offset-bottom">
+                                    <div class="plant-get__img plant-get__img_border-bottom">
+                                        <svg class="svg svg_red">
+                                            <use xlink:href="images/train.svg#train">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <h2 class="plant-get__title">
+                                        Ж/д-вокзал Краснодара Краснодар -1
+                                    </h2>
+                                    <div class="plant-get__subtitle">
+                                        <p>
+
+                                            Здание вокзала расположено в центре города и является самым большим и одним из главных узлов
+                                            Северо-Кавказской железной
+                                            дороги. Был открыт в 1889 году, на данный момент осуществляет междугородные и международные
+                                            перевозки. На территории
+                                            вокзала есть банкоматы, закусочные, кафе, залы ожидания и комнаты отдыха категории «люкс» и
+                                            «полулюкс». Рядом с
+                                            ж/д-вокзалом расположен и автовокзал.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="ymap-container">
+                        <div class="loader loader-default"></div>
+                        <div id="map-contacts" class="ya-map"></div>
+                    </div>
+
+                    <div class="subtitle plant-get plant-get_offset-bottom plant-get_offset-top subtitle-project subtitle-project_size">
+                        <p>
+                            что взять с собой?
+                        </p>
+                    </div>
+                    <div class="block block__row block_red">
+                        <div class="block__column">
+                            <div class="block__column_number">
+                                <span>01</span>
+                            </div>
+                            <div class="block__column_sub">
+                                <p>
+                                    паспорт
+                                </p>
+                            </div>
+                            <div class="block__column_text">
+                                <p>Он нужен для оформления пропуска.</p>
+                            </div>
+                        </div>
+                        <div class="block__column">
+                            <div class="block__column_number">
+                                <span>02</span>
+                            </div>
+                            <div class="block__column_sub">
+                                <p>
+                                    Телефон и камеру
+                                </p>
+                            </div>
+                            <div class="block__column_text">
+                                <p>У нас можно снимать видео и фотографировать.</p>
+                            </div>
+                        </div>
+                        <div class="block__column">
+                            <div class="block__column_number">
+                                <span>03</span>
+                            </div>
+                            <div class="block__column_sub">
+                                <p>
+                                    Друзей
+                                </p>
+                            </div>
+                            <div class="block__column_text">
+                                <p>
+                                    Вместе веселее (а какие получатся селфи!)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-res footer-res__offset line line_green">
+        <div class="footer-wrapper footer-wrapper_def">
+            <div class="footer__box">
+                <div class="footer__box footer__box_desc">
+                    <p>
+                        © 2019 Тихорецкий пивоваренный завод
+                    </p>
+                </div>
+                <a href="#" class="wf">Разработка сайта - WF </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script async src="js/svgxuse.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/jquery.sticky-plugin.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

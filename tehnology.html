@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#" class="logo header__logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav class="header__nav header__nav_offset">
+                <ul>
+
+                    <li>
+                        <a href="#" class="header__link">О компании</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">История</a>
+                                <a href="#" class="header__link">Карьера</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Продукция</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Пиво</a>
+                                <a href="#" class="header__link">Безалкогольные пиво</a>
+                                <a href="#" class="header__link">Сладкие напитки</a>
+                                <a href="#" class="header__link">Вода</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Производство</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Технология производства пива</a>
+                                <a href="#" class="header__link">Технология производства напитков</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+
+                </ul>
+
+                <!-- 
+        <a href="#" class="header__link">Продукция</a>
+        <a href="#" class="header__link">Производство</a>
+        <a href="#" class="header__link">Новости </a>
+        <a href="#" class="header__link">Контакты</a> -->
+            </nav>
+            <button class="header-hamburder header-hamburder-js header-hamburder_offset">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="window">
+                <button class="window-close"></button>
+                <div class="window__content">
+                    <div class="window__menu">
+                        <div class="row">
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        О компании
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Карьера</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Магазины</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Новости</a>
+                                        </div>
+                                        <div class="menu-item-list__item has-child">
+                                            <i class="has-child__arrow"></i>
+                                            <a href="#">Где купить?</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Экскурсии на завод</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size menu-item_offset_bottom">
+                                        Контакты
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Продукция
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Пиво</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Сладкие напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Вода</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Безалкогольные напитки</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Производство
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство пиво</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="mobile-header">
+        <div class="mobile-header__header">
+            <a href="#" class="mobile-logo">
+                <img class="mobile-logo__pic" src="images/logo-vectr.svg" alt="">
+            </a>
+
+            <button class="mobile-btn mobile-btn-js">
+                <span class="mobile-btn__line"></span>
+                <span class="mobile-btn__line"></span>
+            </button>
+        </div>
+        <div class="mobile-header__bottom">
+
+            <ul class="mobile-header__menu">
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Продукция</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Пиво</a>
+                        </li>
+                        <li>
+                            <a href="#">Сладкие напитки</a>
+                        </li>
+                        <li>
+                            <a href="#">Вода</a>
+                        </li>
+                        <li>
+                            <a href="#">Безалкогольные напитки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">О компании</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#">История</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Где купить?</a>
+                        </li>
+                        <li>
+                            <a href="#">Экскурсии на завод</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item mobile-header__project mobile-header__project_offset">
+                        <a href="#">Производство</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="tel:89181207828" class="mobile-header__phone">
+                +7 (918) 12-07-828
+            </a>
+
+        </div>
+    </div>
+    <div class="block-animation active"></div>
+    <section class="section section-bg" style="background-image: url('images/project.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="section__content section__content_h-offset wrapper">
+            <div class="header__navbar">
+                <h1 class="header__title">
+                    технология производства пива
+                </h1>
+                <div class="breadcrump">
+                    <a href="#">Главная страница</a>
+                    <span>Технология производства пива</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <section class="section__content section__content_t-offset wrapper">
+            <div class="row">
+                <div class="col col--xl-3">
+                    <div class="history-navbar" id="sticker">
+                        <div class="history-navabr__column project project__navbar project__navbar_width">
+                            <a href="#" class="history-navbar__list active">Производство</a>
+                            <a href="#" class="history-navbar__list">Технология производства
+                                пива</a>
+                            <a href="#" class="history-navbar__list">Технология производства
+                                напитков</a>
+                            <a href="#" class="history-navbar__list">Экскурсии на завод</a>
+                        </div>
+                    </div>
+                    <div class="select-widget">
+                        <select class="select-widget_js">
+                            <option>Производство</option>
+                            <option>Технология производства
+                                пива</option>
+                            <option>Технология производства напитков</option>
+                            <option>Экскурсии на завод</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col col--xl-9">
+                    <h2 class="title title_red title_line-red">
+                        исключительно качественное сырье
+                    </h2>
+                    <div class="subtitle subtitle_offset-top technology technology_offset-bottom subtitle-project subtitle-project_size">
+                        <p>
+                            «Тихорецкий пивоваренный завод» Это предприятие с органичным сочетанием глубоких производственных традиций
+                            производства
+                            с передовыми технологиями в области пивоварения.
+                        </p>
+                    </div>
+                    <div class="row technology-bg">
+                        <div class="col col--lg-3 col--md-3 ">
+                            <div class="technology-item technology-item__column technology-item__column_offset-bottom">
+                                <div class="box wow fadeInDown">
+                                    <div class="technology-item__text">
+                                        <h3 class="title title_red technology-item__title technology-item__title_low">Хмель</h3>
+                                        <p class="technology-item technology-item_sub">
+                                            Благородные сорта немецкого и чешского хмеля придают пиву гармоничный вкус.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="box wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <div class="technology-item__text">
+                                        <h3 class="title title_red technology-item__title technology-item__title_low">Вода</h3>
+                                        <p class="technology-item technology-item_sub">
+                                            Вода исключительна по мягкости и богата минеральными солями.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--lg-9 col--md-9 ">
+                            <div class="technology-item technology-item__list">
+                                <div class="technology-item__img">
+                                    <div class="technology technology__liberty technology__liberty_circle-one"></div>
+                                    <img src="images/pivoo.png" alt="">
+                                    <div class="technology technology__liberty technology__liberty_circle-three"></div>
+                                    <div class="technology technology__liberty technology__liberty_circle-two"></div>
+                                </div>
+                                <div class=" technology-item__column technology-item__column_offset-right technology-item__column_offset-bottom">
+                                    <div class="box wow fadeInDown">
+                                        <div class="technology-item__text  technology-item technology-item_width">
+                                            <h3 class="title title_red technology-item__title technology-item__title_low">ячмень</h3>
+                                            <p class="technology-item technology-item_sub">
+                                                Отборный двухрядный яровой ячмень сушится и обжаривается – в печах на кедровом торфе.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="box wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                                        <div class="technology-item technology-item_gray">
+                                            <p>
+                                                Мы производим разное пиво - непастеризованное «живое» и пастеризованное, фильтрованное и
+                                                нефильтрованное
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="youtube-content youtube-content_offset">
+                        <div class="youtube" id="ibSNMyNtNn4" style="width: 100%"></div>
+                    </div>
+                    <div class="subtitle technology technology-sub_offset-bottom subtitle-project subtitle-project_size">
+                        <p>
+                            Этапы приготовления пива
+                        </p>
+                    </div>
+                    <div class="row career career_border career_offset-bottom">
+                        <div class="col col--lg-3">
+                            <div class="career-box">
+                                <div class="numbers numbers_red numbers_bold">01.</div>
+                                <div class="description description__career">
+                                    <p>
+                                        Подготовка сырья
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--lg-9">
+                            <div class="text-desc">
+                                Тихорецкое пиво производится согласно многовековым традициям по уникальной чешкой технологии. Основой
+                                для изготовления
+                                сусла становится чистейшая артезианская вода, проходящая специальную подготовку, ячменный и пшеничный
+                                солод высочайшего
+                                качества.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row career career_border career_offset-bottom">
+                        <div class="col col--lg-3">
+                            <div class="career-box">
+                                <div class="numbers numbers_red numbers_bold">02.</div>
+                                <div class="description description__career">
+                                    <p>
+                                        технология
+                                        сбраживания
+                                        и созревания
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--lg-9">
+                            <div class="text-desc">
+                                Для сбраживания основы напитка используются уникальные пивные дрожжи, специально закупаемые в Чехии. В
+                                дальнейшем пиво
+                                проходит несколько стадий брожения. Чем дольше этот процесс, тем гармоничнее вкус напитка. Полный цикл
+                                брожения
+                                Тихорецкое пива составляет 28 дней. Это позволяет сохранить уникальный аромат хмеля, придать пенному
+                                напитку легкую
+                                горчинку и полное солодовое «тело». А длительная холодная выдержка полностью гармонизует вкус пива.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row career career_border career_offset-bottom">
+                        <div class="col col--lg-3">
+                            <div class="career-box">
+                                <div class="numbers numbers_red numbers_bold">03.</div>
+                                <div class="description description__career">
+                                    <p>
+                                        фильтрация
+                                        и розлив
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--lg-9">
+                            <div class="text-desc">
+                                На специальных линиях ( Фирма Vipoll) пиво разливается в стеклобутылку , в ПЭТ бутылку на линии фирмы
+                                (Krones) и в кег
+                                Тару на линии фирмы Keg-Technik.
+                                Вся тара проходит тщательную выбраковку, производится промывка изнутри и снаружи, проводится проверка на
+                                чистоту в
+                                лаборатории.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tehnology-slider">
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/pivo-all.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/pivo-all.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/pivo-all.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/pivo-all.jpg" alt="career">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tehnology-slider tehnology-slider_numbers">
+                        <div>
+                            <div class="tehnology-slider_position">
+                                <a href="#" class="prev-slider">
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+                                </a>
+                                <span class="tehnology-slider_active">1</span>/ 4
+                                <a href="#" class="next-slider">
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-res footer-res__offset line line_green">
+        <div class="footer-wrapper footer-wrapper_def">
+            <div class="footer__box">
+                <div class="footer__box footer__box_desc">
+                    <p>
+                        © 2019 Тихорецкий пивоваренный завод
+                    </p>
+                </div>
+                <a href="#" class="wf">Разработка сайта - WF </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script async src="js/svgxuse.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.sticky-plugin.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

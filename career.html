@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#" class="logo header__logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav class="header__nav header__nav_offset">
+                <ul>
+
+                    <li>
+                        <a href="#" class="header__link">О компании</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">История</a>
+                                <a href="#" class="header__link">Карьера</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Продукция</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Пиво</a>
+                                <a href="#" class="header__link">Безалкогольные пиво</a>
+                                <a href="#" class="header__link">Сладкие напитки</a>
+                                <a href="#" class="header__link">Вода</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Производство</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Технология производства пива</a>
+                                <a href="#" class="header__link">Технология производства напитков</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+
+                </ul>
+
+                <!-- 
+        <a href="#" class="header__link">Продукция</a>
+        <a href="#" class="header__link">Производство</a>
+        <a href="#" class="header__link">Новости </a>
+        <a href="#" class="header__link">Контакты</a> -->
+            </nav>
+            <button class="header-hamburder header-hamburder-js header-hamburder_offset">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="window">
+                <button class="window-close"></button>
+                <div class="window__content">
+                    <div class="window__menu">
+                        <div class="row">
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        О компании
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Карьера</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Магазины</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Новости</a>
+                                        </div>
+                                        <div class="menu-item-list__item has-child">
+                                            <i class="has-child__arrow"></i>
+                                            <a href="#">Где купить?</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Экскурсии на завод</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size menu-item_offset_bottom">
+                                        Контакты
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Продукция
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Пиво</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Сладкие напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Вода</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Безалкогольные напитки</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Производство
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство пиво</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="mobile-header">
+        <div class="mobile-header__header">
+            <a href="#" class="mobile-logo">
+                <img class="mobile-logo__pic" src="images/logo-vectr.svg" alt="">
+            </a>
+
+            <button class="mobile-btn mobile-btn-js">
+                <span class="mobile-btn__line"></span>
+                <span class="mobile-btn__line"></span>
+            </button>
+        </div>
+        <div class="mobile-header__bottom">
+
+            <ul class="mobile-header__menu">
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Продукция</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Пиво</a>
+                        </li>
+                        <li>
+                            <a href="#">Сладкие напитки</a>
+                        </li>
+                        <li>
+                            <a href="#">Вода</a>
+                        </li>
+                        <li>
+                            <a href="#">Безалкогольные напитки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">О компании</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#">История</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Где купить?</a>
+                        </li>
+                        <li>
+                            <a href="#">Экскурсии на завод</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item mobile-header__project mobile-header__project_offset">
+                        <a href="#">Производство</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="tel:89181207828" class="mobile-header__phone">
+                +7 (918) 12-07-828
+            </a>
+
+        </div>
+    </div>
+
+    <section class="section section-bg section__career" style="background-image: url('images/career.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="section__content section__content_h-offset wrapper">
+            <div class="header__navbar">
+                <h1 class="header__title">
+                    карьера
+                </h1>
+                <div class="breadcrump">
+                    <a href="#">Главная страница</a>
+                    <span>Карьера</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <section class="section__content section__content_defoult_t-offset section__content_t-offset wrapper wrapper_def">
+            <div class="row">
+                <div class="col col--xl-2 col--lg-12 ">
+                    <div class="history-navbar" id="sticker">
+                        <div class="history-navabr__column">
+                            <a href="#" class="history-navbar__list">О компании</a>
+                            <a href="#" class="history-navbar__list">История</a>
+                            <a href="#" class="history-navbar__list active">Карьера</a>
+                            <a href="#" class="history-navbar__list">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="select-widget">
+                        <select class="select-widget_js">
+                            <option>О компании</option>
+                            <option>История</option>
+                            <option>Карьера</option>
+                            <option>Контакты</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col--xl-offset-1">
+                </div>
+                <div class="col col--xl-9">
+                    <h2 class="title title_red title_line-red">
+                        КАРЬЕРА
+                    </h2>
+                    <div class="subtitle subtitle_offset-top subtitle_offset-bottom">
+                        <p>
+                            Сотрудники нашего предприятия являются основой потенциала завода.
+                        </p>
+                    </div>
+                    <div class="row career career_border career_offset-bottom">
+                        <div class="col col--lg-3">
+                            <div class="career-box">
+                                <div class="number numbers_red numbers_bold">01.</div>
+                                <div class="description description__career">
+                                    <p>Преданность духу, профессионализм</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--lg-9">
+                            <div class="text-desc">
+                                Наш персонал имеет высокую квалификацию, необходимые навыки и компетентность, и каждый сотрудник
+                                досконально знает, как
+                                наилучшим образом делать свое дело. Ежегодно на предприятии проводятся конкурсы профессионального
+                                мастерства «Лучший по
+                                профессии». Победители конкурса награждаются Почетными грамотами предприятия, им вручаются ценные
+                                подарки. Но мало быть
+                                профессиональным, важно еще и передать свои знания и умения
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row career career_border career_offset-bottom">
+                        <div class="col col--lg-3">
+                            <div class="career-box">
+                                <div class="number numbers_red numbers_bold">02.</div>
+                                <div class="description description__career">
+                                    <p>Стабильность</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--lg-9">
+                            <div class="text-desc">
+                                Мы работаем на рынке давно и используем наш опыт для непрерывного роста. На предприятии работает более
+                                1000 человек.
+                                Практика предприятия - нанимать основных работников напрямую из университетов, планируя их будущее
+                                обучение и развитие в
+                                рамках предприятия вплоть до достижения ими пенсионного возраста, гарантируя им престижную работу.
+                                Обычно после
+                                наступления пенсионного возраста люди продолжают трудиться на нашем предприятии.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tehnology-slider">
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/career-s.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/career-s.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/career-s.jpg" alt="career">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tehnology-slider__item">
+                                <img src="images/career-s.jpg" alt="career">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tehnology-slider tehnology-slider_numbers">
+                        <div>
+                            <div class="tehnology-slider_position">
+                                <a href="#" class="prev-slider">
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+                                </a>
+                                <span class="tehnology-slider_active">1</span>/ 4
+                                <a href="#" class="next-slider">
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col col--xl-2"></div>
+                <div class="col--xl-offset-1"></div>
+                <div class="col col--xl-9">
+                    <div class="career-jobs">
+                        <div class="career-jobs__content career-jobs_border-bottom toggler">
+                            <a href="#" class="toggler-trigger career-jobs__widget">
+                                <div class="career-jobs__text">
+                                    <p class="career-jobs__title">Ведущий специалист по финансовой отчетности</p>
+                                    <span class="career-jobs__subtitle">З/п не указана</span>
+                                </div>
+                                <div class="career-jobs__arrow">
+
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+
+                                </div>
+                            </a>
+                            <div class="career career-jobs__item toggler__content">
+                                <div class="text-desc text-desc__career">
+                                    <p>
+                                        Требуемый опыт работы: Нет опыта
+                                    </p>
+                                    <p>
+                                        Полная занятость, Полный день
+                                    </p>
+                                </div>
+                                <p class="career__subtitle">
+                                    Требования:
+                                </p>
+                                <ul class="career__list">
+                                    <li>Высшее образование в области экономики и финансов.</li>
+                                    <li>Опыт в области финансового менеджмента, аудита, консалтинга или риск-менеджмента от 3-х лет.</li>
+                                    <li>Желательно наличие сертификатов или участие в программах CIMA, АССА, CFA.</li>
+                                    <li>Умение читать и трактовать МСФО, РСБУ отчетность.</li>
+                                    <li>Знание управленческого учета, бюджетирования, инвестиционного анализа.</li>
+                                    <li>Навыки построения финансовых моделей.</li>
+                                    <li>Бизнес-английский язык не ниже intermediate (чтение отчетности и бизнес-планов зарубежных
+                                        компаний).</li>
+                                </ul>
+
+                                <p class="career__subtitle">
+                                    Обязанности:
+                                </p>
+
+                                <ul class="career__list">
+                                    <li>Проведение экономического, финансового и инвестиционного анализа деятельности компаний.</li>
+                                    <li>Анализ бюджетов, бизнес-планов и стратегий компаний.</li>
+                                    <li>Анализ основных рынков и компаний отрасли.</li>
+                                    <li>Анализ инвестиционной привлекательности, рисков проектов и последующий мониторинг.</li>
+                                    <li>Подготовка независимого заключения для акционеров и Совета директоров.</li>
+                                    <li>Подготовка аналитических отчетов и презентаций по запросу руководства.</li>
+                                    <li>Разработка и поддержание финансовых моделей.</li>
+                                </ul>
+
+                                <p class="career__subtitle">
+                                    Условия работы:
+                                </p>
+                                <ul class="career__list">
+                                    <li>Трудоустройство согласно ТК РФ.</li>
+                                    <li>График работы с 10:00 до 19:00.</li>
+                                    <li>ДМС.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="career-jobs__content career-jobs_border-bottom toggler">
+                            <a href="#" class="toggler-trigger career-jobs__widget">
+                                <div class="career-jobs__text">
+                                    <p class="career-jobs__title">Микробиолог</p>
+                                    <span class="career-jobs__subtitle">З/п не указана</span>
+                                </div>
+                                <div class="career-jobs__arrow">
+
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+
+                                </div>
+                            </a>
+                            <div class="career career-jobs__item toggler__content">
+                                <div class="text-desc text-desc__career">
+                                    <p>
+                                        Требуемый опыт работы: Нет опыта
+                                    </p>
+                                    <p>
+                                        Полная занятость, Полный день
+                                    </p>
+                                </div>
+                                <p class="career__subtitle">
+                                    Требования:
+                                </p>
+                                <ul class="career__list">
+                                    <li>Высшее образование в области экономики и финансов.</li>
+                                    <li>Опыт в области финансового менеджмента, аудита, консалтинга или риск-менеджмента от 3-х лет.</li>
+                                    <li>Желательно наличие сертификатов или участие в программах CIMA, АССА, CFA.</li>
+                                    <li>Умение читать и трактовать МСФО, РСБУ отчетность.</li>
+                                    <li>Знание управленческого учета, бюджетирования, инвестиционного анализа.</li>
+                                    <li>Навыки построения финансовых моделей.</li>
+                                    <li>Бизнес-английский язык не ниже intermediate (чтение отчетности и бизнес-планов зарубежных
+                                        компаний).</li>
+                                </ul>
+
+                                <p class="career__subtitle">
+                                    Обязанности:
+                                </p>
+
+                                <ul class="career__list">
+                                    <li>Проведение экономического, финансового и инвестиционного анализа деятельности компаний.</li>
+                                    <li>Анализ бюджетов, бизнес-планов и стратегий компаний.</li>
+                                    <li>Анализ основных рынков и компаний отрасли.</li>
+                                    <li>Анализ инвестиционной привлекательности, рисков проектов и последующий мониторинг.</li>
+                                    <li>Подготовка независимого заключения для акционеров и Совета директоров.</li>
+                                    <li>Подготовка аналитических отчетов и презентаций по запросу руководства.</li>
+                                    <li>Разработка и поддержание финансовых моделей.</li>
+                                </ul>
+
+                                <p class="career__subtitle">
+                                    Условия работы:
+                                </p>
+                                <ul class="career__list">
+                                    <li>Трудоустройство согласно ТК РФ.</li>
+                                    <li>График работы с 10:00 до 19:00.</li>
+                                    <li>ДМС.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="career-jobs__content career-jobs_border-bottom toggler">
+                            <a href="#" class="toggler-trigger career-jobs__widget">
+                                <div class="career-jobs__text">
+                                    <p class="career-jobs__title">Менеджер по контролю экономики
+                                    </p>
+                                    <span class="career-jobs__subtitle">40 000 руб.</span>
+                                </div>
+                                <div class="career-jobs__arrow">
+
+                                    <svg class="icon-arrow">
+                                        <use xlink:href="images/arrow-right.svg#arrow-r"></use>
+                                    </svg>
+
+                                </div>
+                            </a>
+                            <div class="career career-jobs__item toggler__content">
+                                <div class="text-desc text-desc__career">
+                                    <p>
+                                        Требуемый опыт работы: Нет опыта
+                                    </p>
+                                    <p>
+                                        Полная занятость, Полный день
+                                    </p>
+                                </div>
+                                <p class="career__subtitle">
+                                    Требования:
+                                </p>
+                                <ul class="career__list">
+                                    <li>Высшее образование в области экономики и финансов.</li>
+                                    <li>Опыт в области финансового менеджмента, аудита, консалтинга или риск-менеджмента от 3-х лет.</li>
+                                    <li>Желательно наличие сертификатов или участие в программах CIMA, АССА, CFA.</li>
+                                    <li>Умение читать и трактовать МСФО, РСБУ отчетность.</li>
+                                    <li>Знание управленческого учета, бюджетирования, инвестиционного анализа.</li>
+                                    <li>Навыки построения финансовых моделей.</li>
+                                    <li>Бизнес-английский язык не ниже intermediate (чтение отчетности и бизнес-планов зарубежных
+                                        компаний).</li>
+                                </ul>
+
+                                <p class="career__subtitle">
+                                    Обязанности:
+                                </p>
+
+                                <ul class="career__list">
+                                    <li>Проведение экономического, финансового и инвестиционного анализа деятельности компаний.</li>
+                                    <li>Анализ бюджетов, бизнес-планов и стратегий компаний.</li>
+                                    <li>Анализ основных рынков и компаний отрасли.</li>
+                                    <li>Анализ инвестиционной привлекательности, рисков проектов и последующий мониторинг.</li>
+                                    <li>Подготовка независимого заключения для акционеров и Совета директоров.</li>
+                                    <li>Подготовка аналитических отчетов и презентаций по запросу руководства.</li>
+                                    <li>Разработка и поддержание финансовых моделей.</li>
+                                </ul>
+
+                                <p class="career__subtitle">
+                                    Условия работы:
+                                </p>
+                                <ul class="career__list">
+                                    <li>Трудоустройство согласно ТК РФ.</li>
+                                    <li>График работы с 10:00 до 19:00.</li>
+                                    <li>ДМС.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer-res footer-res__offset line line_green">
+        <div class="footer-wrapper footer-wrapper_def">
+            <div class="footer__box">
+                <div class="footer__box footer__box_desc">
+                    <p>
+                        © 2019 Тихорецкий пивоваренный завод
+                    </p>
+                </div>
+                <a href="#" class="wf">Разработка сайта - WF </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script async src="js/svgxuse.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.sticky-plugin.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

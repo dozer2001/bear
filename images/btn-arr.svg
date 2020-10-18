@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol viewBox="0 0 1000 1000" id="btn-arr">
+            <g>
+								<path style="fill:none;stroke:#e8abaf;stroke-width:45.3543;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;enable-background:new;" d="M315.9,301c46.3-59.7,106.7-82.1,188.1-82.1c139.8,0,253.1,113.3,253.1,253.1S643.8,725.1,504,725.1
+									c-83.3,0-153.2-22.2-199.3-84.3"/>
+								<line style="fill:none;stroke:#c81823;stroke-width:39.685;stroke-linecap:round;stroke-miterlimit:10;" x1="189.7" y1="469.7" x2="498.6" y2="469.7"/>
+								<line style="fill:none;stroke:#c81823;stroke-width:39.685;stroke-linecap:round;stroke-miterlimit:10;" x1="409.7" y1="389.9" x2="498.6" y2="469"/>
+								<line style="fill:none;stroke:#c81823;stroke-width:39.685;stroke-linecap:round;stroke-miterlimit:10;" x1="410.2" y1="557.5" x2="498.6" y2="469"/>
+            </g>
+        </symbol>
+    </defs>
+</svg>
+

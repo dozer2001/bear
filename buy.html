@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#" class="logo header__logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav class="header__nav header__nav_offset">
+                <ul>
+
+                    <li>
+                        <a href="#" class="header__link">О компании</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">История</a>
+                                <a href="#" class="header__link">Карьера</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Продукция</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Пиво</a>
+                                <a href="#" class="header__link">Безалкогольные пиво</a>
+                                <a href="#" class="header__link">Сладкие напитки</a>
+                                <a href="#" class="header__link">Вода</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Производство</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Технология производства пива</a>
+                                <a href="#" class="header__link">Технология производства напитков</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+
+                </ul>
+
+                <!-- 
+        <a href="#" class="header__link">Продукция</a>
+        <a href="#" class="header__link">Производство</a>
+        <a href="#" class="header__link">Новости </a>
+        <a href="#" class="header__link">Контакты</a> -->
+            </nav>
+            <button class="header-hamburder header-hamburder-js header-hamburder_offset">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="window">
+                <button class="window-close"></button>
+                <div class="window__content">
+                    <div class="window__menu">
+                        <div class="row">
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        О компании
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Карьера</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Магазины</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Новости</a>
+                                        </div>
+                                        <div class="menu-item-list__item has-child">
+                                            <i class="has-child__arrow"></i>
+                                            <a href="#">Где купить?</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Экскурсии на завод</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size menu-item_offset_bottom">
+                                        Контакты
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Продукция
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Пиво</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Сладкие напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Вода</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Безалкогольные напитки</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Производство
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство пиво</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="mobile-header">
+        <div class="mobile-header__header">
+            <a href="#" class="mobile-logo">
+                <img class="mobile-logo__pic" src="images/logo-vectr.svg" alt="">
+            </a>
+
+            <button class="mobile-btn mobile-btn-js">
+                <span class="mobile-btn__line"></span>
+                <span class="mobile-btn__line"></span>
+            </button>
+        </div>
+        <div class="mobile-header__bottom">
+
+            <ul class="mobile-header__menu">
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Продукция</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Пиво</a>
+                        </li>
+                        <li>
+                            <a href="#">Сладкие напитки</a>
+                        </li>
+                        <li>
+                            <a href="#">Вода</a>
+                        </li>
+                        <li>
+                            <a href="#">Безалкогольные напитки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">О компании</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#">История</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Где купить?</a>
+                        </li>
+                        <li>
+                            <a href="#">Экскурсии на завод</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item mobile-header__project mobile-header__project_offset">
+                        <a href="#">Производство</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="tel:89181207828" class="mobile-header__phone">
+                +7 (918) 12-07-828
+            </a>
+
+        </div>
+    </div>
+
+    <section class="section section-bg" style="background-image: url('images/buy-top.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="section__content section__content_h-offset wrapper">
+            <div class="header__navbar">
+                <h1 class="header__title">
+                    Где купить
+                </h1>
+                <div class="breadcrump">
+                    <a href="#">Главная страница</a>
+                    <span>Где купить</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="section__content section__content_t-offset wrapper">
+            <h3 class="h3 address__title">
+                Краснодар
+            </h3>
+            <div class="row">
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+
+                    <a href="#map" class="address-tile trigger-map" data-coord="[45.02068507460854, 39.024307]">
+
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «Best»</p>
+                            <p class="address-tile__subtitle">ул.Ставропольская 131</p>
+                        </div>
+                        <span class="more-link more-link_o">
+                            <i class="more-icon more-link__ico">
+                                <svg class="more-icon__item more-icon__arrow">
+                                    <use xlink:href="images/icons.svg#more-arrow-ico">
+                                    </use>
+                                </svg>
+                                <svg class="more-icon__item more-icon__circle">
+                                    <use xlink:href="images/icons.svg#more-circle-ico">
+                                    </use>
+                                </svg>
+                            </i>
+                            <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                        </span>
+
+                    </a>
+
+                </div>
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+
+                    <a href="#map" class="address-tile trigger-map" data-coord="[45.01669657457268, 39.03971349999996]">
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «23 регион»</p>
+                            <p class="address-tile__subtitle">ул.Ставропольская 248</p>
+                        </div>
+
+                        <div class="address-tile__button">
+                            <span class="more-link more-link_o">
+                                <i class="more-icon more-link__ico">
+                                    <svg class="more-icon__item more-icon__arrow">
+                                        <use xlink:href="images/icons.svg#more-arrow-ico">
+                                        </use>
+                                    </svg>
+                                    <svg class="more-icon__item more-icon__circle">
+                                        <use xlink:href="images/icons.svg#more-circle-ico">
+                                        </use>
+                                    </svg>
+                                </i>
+                                <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                            </span>
+
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+                    <a href="#map" data-coord="[45.088039074577146,39.002540999999965]" class="address-tile trigger-map">
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «Тихорецкая
+                                пивоварня»</p>
+                            <p class="address-tile__subtitle">ул.Московская 144/1</p>
+                        </div>
+
+                        <div class="address-tile__button">
+                            <span class="more-link more-link_o">
+                                <i class="more-icon more-link__ico">
+                                    <svg class="more-icon__item more-icon__arrow">
+                                        <use xlink:href="images/icons.svg#more-arrow-ico">
+                                        </use>
+                                    </svg>
+                                    <svg class="more-icon__item more-icon__circle">
+                                        <use xlink:href="images/icons.svg#more-circle-ico">
+                                        </use>
+                                    </svg>
+                                </i>
+                                <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                            </span>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+                    <a href="#map" data-coord="[45.050806074583726,38.977954]" class="address-tile trigger-map address-tile_reset">
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «Тихорецкое
+                                пиво»</p>
+                            <p class="address-tile__subtitle">ул. Одесская 34/2</p>
+                        </div>
+
+                        <div class="address-tile__button">
+                            <span class="more-link more-link_o">
+                                <i class="more-icon more-link__ico">
+                                    <svg class="more-icon__item more-icon__arrow">
+                                        <use xlink:href="images/icons.svg#more-arrow-ico">
+                                        </use>
+                                    </svg>
+                                    <svg class="more-icon__item more-icon__circle">
+                                        <use xlink:href="images/icons.svg#more-circle-ico">
+                                        </use>
+                                    </svg>
+                                </i>
+                                <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                            </span>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section__content section__content_t-offset wrapper">
+
+            <h3 class="h3 address__title">
+                Тихорецк
+            </h3>
+
+            <div class="row">
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+                    <a href="#map" class="address-tile trigger-map" data-coord="[45.850210574502135,40.127132999999986]">
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «Казмер»</p>
+                            <p class="address-tile__subtitle">ул.Меньшикова 57</p>
+                        </div>
+
+                        <div class="address-tile__button">
+                            <span class="more-link more-link_o">
+                                <i class="more-icon more-link__ico">
+                                    <svg class="more-icon__item more-icon__arrow">
+                                        <use xlink:href="images/icons.svg#more-arrow-ico">
+                                        </use>
+                                    </svg>
+                                    <svg class="more-icon__item more-icon__circle">
+                                        <use xlink:href="images/icons.svg#more-circle-ico">
+                                        </use>
+                                    </svg>
+                                </i>
+                                <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                            </span>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+                    <a href="#map" class="address-tile trigger-map" data-coord="[45.850210574502135, 40.127132999999986]">
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «Старт»</p>
+                            <p class="address-tile__subtitle">ул.Подвойного,117</p>
+                        </div>
+
+                        <div class="address-tile__button">
+                            <span class="more-link more-link_o">
+                                <i class="more-icon more-link__ico">
+                                    <svg class="more-icon__item more-icon__arrow">
+                                        <use xlink:href="images/icons.svg#more-arrow-ico">
+                                        </use>
+                                    </svg>
+                                    <svg class="more-icon__item more-icon__circle">
+                                        <use xlink:href="images/icons.svg#more-circle-ico">
+                                        </use>
+                                    </svg>
+                                </i>
+                                <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                            </span>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+                    <a href="#map" class="address-tile trigger-map" data-coord="[45.8481712204491,40.132835713088895]">
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «Станция
+                                Тихорецкая»</p>
+                            <p class="address-tile__subtitle">ул.Ставропольская 131</p>
+                        </div>
+
+                        <div class="address-tile__button">
+                            <span class="more-link more-link_o">
+                                <i class="more-icon more-link__ico">
+                                    <svg class="more-icon__item more-icon__arrow">
+                                        <use xlink:href="images/icons.svg#more-arrow-ico">
+                                        </use>
+                                    </svg>
+                                    <svg class="more-icon__item more-icon__circle">
+                                        <use xlink:href="images/icons.svg#more-circle-ico">
+                                        </use>
+                                    </svg>
+                                </i>
+                                <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                            </span>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+                    <a href="#map" class="address-tile trigger-map" data-coord="[45.859086574525016,40.11374799999993]">
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «Бригантина»</p>
+                            <p class="address-tile__subtitle">ул.Меньшикова 119</p>
+                        </div>
+
+                        <div class="address-tile__button">
+                            <span class="more-link more-link_o">
+                                <i class="more-icon more-link__ico">
+                                    <svg class="more-icon__item more-icon__arrow">
+                                        <use xlink:href="images/icons.svg#more-arrow-ico">
+                                        </use>
+                                    </svg>
+                                    <svg class="more-icon__item more-icon__circle">
+                                        <use xlink:href="images/icons.svg#more-circle-ico">
+                                        </use>
+                                    </svg>
+                                </i>
+                                <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                            </span>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col col--xl-3 col--lg-4 col--md-6">
+                    <a href="#map" class="address-tile address-tile_reset address__title_top trigger-map" data-coord="[45.41422857456925, 37.96170799999999]">
+                        <div class="address-tile__text">
+                            <p class="address-tile__title">Пивной маркет «У Казмера»</p>
+                            <p class="address-tile__subtitle">ул.Чапаева 2/10</p>
+                        </div>
+
+                        <span class="more-link more-link_o">
+                            <i class="more-icon more-link__ico">
+                                <svg class="more-icon__item more-icon__arrow">
+                                    <use xlink:href="images/icons.svg#more-arrow-ico">
+                                    </use>
+                                </svg>
+                                <svg class="more-icon__item more-icon__circle">
+                                    <use xlink:href="images/icons.svg#more-circle-ico">
+                                    </use>
+                                </svg>
+                            </i>
+                            <span class="more-link__title title_small title_upper title_bold">на карте</span>
+                        </span>
+                        <div class="address-tile__button">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section__content section__content_t-offset wrapper">
+
+            <div class="ymap-container">
+                <div class="loader loader-default"></div>
+                <div id="map" class="ya-map"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer-res footer-res__offset line line_green">
+        <div class="footer-wrapper footer-wrapper_def">
+            <div class="footer__box">
+                <div class="footer__box footer__box_desc">
+                    <p>
+                        © 2019 Тихорецкий пивоваренный завод
+                    </p>
+                </div>
+                <a href="#" class="wf">Разработка сайта - WF </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script async src="js/svgxuse.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

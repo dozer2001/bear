@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol viewBox="0 0 18.3 11.15" id="arrow-r">
+            <g>
+<path style="fill:#e30613;stroke:#e30613;stroke-miterlimit:10;stroke-width:0.25px;" d="M-431.2,360.7a.60833.60833,0,0,0-.8,0,.48333.48333,0,0,0,0,.7l4.2,4.1h-15.7a.47239.47239,0,0,0-.5.5.47239.47239,0,0,0,.5.5h15.6l-4.1,4.1a.48333.48333,0,0,0,0,.7.60833.60833,0,0,0,.8,0l5.1-5a.48333.48333,0,0,0,0-.7Z" transform="translate(444.125 -360.425)"/>
+            </g>
+        </symbol>
+    </defs>
+</svg>

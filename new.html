@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#" class="logo header__logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav class="header__nav header__nav_offset">
+                <ul>
+
+                    <li>
+                        <a href="#" class="header__link">О компании</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">История</a>
+                                <a href="#" class="header__link">Карьера</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Продукция</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Пиво</a>
+                                <a href="#" class="header__link">Безалкогольные пиво</a>
+                                <a href="#" class="header__link">Сладкие напитки</a>
+                                <a href="#" class="header__link">Вода</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Производство</a>
+                        <div class="header__widget">
+
+                            <div class="header__content">
+                                <a href="#" class="header__link">Технология производства пива</a>
+                                <a href="#" class="header__link">Технология производства напитков</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+
+                </ul>
+
+                <!-- 
+        <a href="#" class="header__link">Продукция</a>
+        <a href="#" class="header__link">Производство</a>
+        <a href="#" class="header__link">Новости </a>
+        <a href="#" class="header__link">Контакты</a> -->
+            </nav>
+            <button class="header-hamburder header-hamburder-js header-hamburder_offset">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="window">
+                <button class="window-close"></button>
+                <div class="window__content">
+                    <div class="window__menu">
+                        <div class="row">
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        О компании
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Карьера</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Магазины</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Новости</a>
+                                        </div>
+                                        <div class="menu-item-list__item has-child">
+                                            <i class="has-child__arrow"></i>
+                                            <a href="#">Где купить?</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">История</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Экскурсии на завод</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size menu-item_offset_bottom">
+                                        Контакты
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Продукция
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Пиво</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Сладкие напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Вода</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Безалкогольные напитки</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--lg-6">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-item__title title_upper title_bold title_size-mob title_size">
+                                        Производство
+                                    </a>
+                                    <div class="menu-item-list">
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство напитки</a>
+                                        </div>
+                                        <div class="menu-item-list__item">
+                                            <a href="#">Производство пиво</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="mobile-header">
+        <div class="mobile-header__header">
+            <a href="#" class="mobile-logo">
+                <img class="mobile-logo__pic" src="images/logo-vectr.svg" alt="">
+            </a>
+
+            <button class="mobile-btn mobile-btn-js">
+                <span class="mobile-btn__line"></span>
+                <span class="mobile-btn__line"></span>
+            </button>
+        </div>
+        <div class="mobile-header__bottom">
+
+            <ul class="mobile-header__menu">
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Продукция</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Пиво</a>
+                        </li>
+                        <li>
+                            <a href="#">Сладкие напитки</a>
+                        </li>
+                        <li>
+                            <a href="#">Вода</a>
+                        </li>
+                        <li>
+                            <a href="#">Безалкогольные напитки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">О компании</a>
+                        <i class="mobile-header__arrow"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#">История</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Где купить?</a>
+                        </li>
+                        <li>
+                            <a href="#">Экскурсии на завод</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="mobile-header__item mobile-header__project mobile-header__project_offset">
+                        <a href="#">Производство</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile-header__item">
+                        <a href="#">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="tel:89181207828" class="mobile-header__phone">
+                +7 (918) 12-07-828
+            </a>
+
+        </div>
+    </div>
+
+    <section class="section section-bg" style="background-image: url('images/new.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="section__content section__content_h-offset wrapper">
+            <div class="header__navbar">
+                <h1 class="header__title">
+                    Новости
+                </h1>
+                <div class="breadcrump">
+                    <a href="#">Главная страница</a>
+                    <a href="#">Новости</a>
+                    <span>Мы предлагаем пиво собственного производства и от наших зарубежных партнеров</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <section class="section__content section__content_t-offset wrapper wrapper_reset">
+            <h2 class="title title_black title_line-red">
+                Мы предлагаем пиво собственного производства и от наших зарубежных партнеров
+            </h2>
+            <div class="text-desc text-new_h text-new text-new_top text-desc_offset-top text-desc_offset-bottom">
+                <p>
+                    Москве со 2 по 3 июля 2019 года проходила V Всероссийская научно-техническая конференция «Развитие и повышение
+                    надежности эксплуатации распределительных электрических сетей». В этом году конференция впервые получила
+                    статус выездной
+                    сессии Международного форума «Электрические сети» (МФЭС-2019). Организатор мероприятия – ПАО «Россети».
+                    Конференция является важным событием для российской электроэнергетики и уже который год собирает на своей
+                    площадке
+                    ведущих экспертов отрасли. В этом году в конференции приняли участие АО «ОЭК», АО «ЮРЭСК», ПАО «МРСК Центра,
+                    ПАО
+                    «Ленэнерго», ОАО «Сетевая компания», АО «Мособлэнерго, специалисты компаний нефтегазовой отрасли, ученые РАН,
+                    а также
+                    представители российских вузов.
+                </p>
+            </div>
+            <div class="img">
+                <img class="new new_img" src="images/new-m.jpg" alt="">
+            </div>
+            <div class="text-desc text-new text-new_h text-desc_offset-top text-desc_offset-bottom">
+                <p>
+                    Москве со 2 по 3 июля 2019 года проходила V Всероссийская научно-техническая конференция «Развитие и повышение
+                    надежности эксплуатации распределительных электрических сетей». В этом году конференция впервые получила
+                    статус выездной
+                    сессии Международного форума «Электрические сети» (МФЭС-2019). Организатор мероприятия – ПАО «Россети».
+                    Конференция является важным событием для российской электроэнергетики и уже который год собирает на своей
+                    площадке
+                    ведущих экспертов отрасли. В этом году в конференции приняли участие АО «ОЭК», АО «ЮРЭСК», ПАО «МРСК Центра,
+                    ПАО
+                    «Ленэнерго», ОАО «Сетевая компания», АО «Мособлэнерго, специалисты компаний нефтегазовой отрасли, ученые РАН,
+                    а также
+                    представители российских вузов.
+                </p>
+            </div>
+            <a href="#" class="card-link">
+                <div class="card-link__image">
+                    <svg class="icon-link">
+                        <use xlink:href="images/circl-all.svg#beer-circl"></use>
+                    </svg>
+                </div>
+                <span class="card-link__desc">
+                    В продукцию
+                </span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer-res footer-res__offset line line_green">
+        <div class="footer-wrapper footer-wrapper_def">
+            <div class="footer__box">
+                <div class="footer__box footer__box_desc">
+                    <p>
+                        © 2019 Тихорецкий пивоваренный завод
+                    </p>
+                </div>
+                <a href="#" class="wf">Разработка сайта - WF </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script async src="js/svgxuse.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.sticky-plugin.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

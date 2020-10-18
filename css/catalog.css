@@ -1,0 +1,121 @@
+.catalog__navbar {
+    display: flex;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.catalog__navbar_link {
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    margin-right: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: all .5s ease;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.catalog__navbar_link:hover {
+    transition: all .5s ease;
+    color: #e30613;
+}
+
+.catalog__content_box .image {
+    text-align: center;
+}
+
+.main-gray {
+    background-color: #fafafa;
+}
+
+.catalog_border-bottom {
+    border-bottom: 1px solid #939393;
+}
+
+.catalog__content_box:hover .catalog__content_title {
+    color: #d70613;
+}
+
+.footer-res_gray {
+    background-color: #fafafa;
+}
+
+.catalog__content_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    justify-content: space-between;
+}
+
+.catalog__content {
+    padding-top: 6rem;
+}
+
+.catalog__content_offset-top {
+    margin-top: 4.4rem;
+}
+
+.catalog__content_bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 372px;
+    padding-left: 2.5rem;
+    background-color: #fff;
+    box-shadow: 0 3px 4px rgba(38, 44, 49, .08);
+}
+
+.main-gray_offset_bottom {
+    padding-bottom: 5rem;
+}
+
+a.catalog__content_box.catalog-min {
+    margin-top: 3rem;
+}
+
+.catalog__navbar_link.active {
+    color: #e30613;
+}
+
+.catalog__navbar_link.active:before {
+    position: absolute;
+    bottom: -2rem;
+    left: -1px;
+    width: 100%;
+    content: '';
+    border-bottom: 3px solid #e30613;
+}
+
+.catalog__content_title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.catalog__content_subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    display: flex;
+    color: #000;
+}
+
+.catalog__content_subtitle .catalog_sub {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.catalog__content_subtitle .catalog_sub:first-child {
+    padding-left: 0;
+}
+
+.catalog__content_subtitle .catalog_sub:last-child {
+    padding-right: 0;
+}
